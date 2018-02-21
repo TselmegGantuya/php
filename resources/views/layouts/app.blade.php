@@ -30,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        @if(Auth::user()->role == 'admin')<li><a href="{{url('/admin/')}}">Admin</a></li>@endif 
+                        @if(Auth::check() && Auth::user()->role == 'admin')<li><a href="{{url('/admin/')}}">Admin</a></li>@endif 
                     </ul>
 
                     <!-- Right Side Of Navbar -->

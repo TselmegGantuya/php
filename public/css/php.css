@@ -1,8 +1,16 @@
 ul {
 	list-style-type: none;
+	border:1px black;
+}
+.list-name{
+width:630px;
+display: inline-flex;
+}
+.item-name{
+width:590px;
+display: inline-flex;
 }
 span{
-	float: right;
-	cursor: pointer;
+ cursor: pointer;
 }
 
